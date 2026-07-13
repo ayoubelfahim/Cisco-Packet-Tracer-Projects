@@ -55,9 +55,11 @@ The router is configured as a DHCP server to automatically assign IPv4 addresses
 
 ## Files
 
-- Home-Network-DHCP.pkz
-- topology.png
-- screenshots/
+- Projekt 1 – Heimnetzwerk mit DHCP.pkz
+- network-topology.png
+- dhcp-router-configuration.png
+- connectivity-test.png
+  
 ## Screenshots
 
 ### Network Topology
