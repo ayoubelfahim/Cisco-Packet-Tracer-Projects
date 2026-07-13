@@ -51,3 +51,27 @@ The network is divided into multiple subnets to improve network organization and
 - Design IPv4 subnets.
 - Configure router interfaces.
 - Verify network communication.
+
+  ## Screenshots
+
+### Network Topology
+
+![Network Topology](network-topology.png)
+
+---
+
+### Router Configuration
+
+![Router Configuration](router-configuration.png)
+
+---
+
+### Client Configuration
+
+![Client Configuration](client-configuration.png)
+
+---
+
+### Connectivity Test
+
+![Connectivity Test](connectivity-test.png)
