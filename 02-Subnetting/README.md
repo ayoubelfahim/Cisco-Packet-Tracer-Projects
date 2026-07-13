@@ -41,10 +41,11 @@ The network is divided into multiple subnets to improve network organization and
 
 ## Files
 
-- subnetting.pkz
+- subnetting.pkt
 - network-topology.png
 - router-configuration.png
-- subnetting-results.png
+- client-configuration.png
+- connectivity-test.png
 
 ## What I Learned
 
