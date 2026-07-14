@@ -18,15 +18,11 @@ This repository contains practical networking labs created using Cisco Packet Tr
 ## Projects
 
 | No. | Project | Status |
-|-----|---------|:------:|
-| 01 | Home Network with DHCP | ✅ |
-| 02 | Subnetting | ⏳ |
-| 03 | VLAN Configuration | ⏳ |
-| 04 | Network Troubleshooting | ⏳ |
-| 05 | Static Routing | ⏳ |
-| 06 | OSPF Routing | ⏳ |
-| 07 | ACL Configuration | ⏳ |
-| 08 | Small Office Network | ⏳ |
+|----:|---------|:------:|
+| 01 | [Home Network with DHCP](./01-Home-Network-DHCP) | ✅ |
+| 02 | [IPv4 Subnetting](./02-IPv4-Subnetting) | ✅ |
+| 03 | [Network Troubleshooting](./03-Troubleshooting-Inter-Subnet) | ✅ |
+| 04 | [VLAN & Inter-VLAN Routing](./04-VLAN-Inter-VLAN-Routing) | ✅ |
 
 ## Tools
 
