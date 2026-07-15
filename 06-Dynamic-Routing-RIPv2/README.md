@@ -2,57 +2,42 @@
 
 ## Overview
 
-This project demonstrates **Dynamic Routing using RIP Version 2 (RIPv2)** in Cisco Packet Tracer.
+This project demonstrates dynamic routing using RIP version 2 (RIPv2) in Cisco Packet Tracer.
 
-Three separate LANs are interconnected through multiple routers. Instead of using static routes, RIPv2 dynamically exchanges routing information, allowing all networks to communicate automatically.
+Three different LANs are connected through multiple routers. RIPv2 automatically exchanges routing information, allowing all networks to communicate without manually configuring static routes.
 
 ---
 
 ## Objectives
 
-- Configure Dynamic Routing using RIPv2
+- Configure dynamic routing using RIPv2
 - Advertise IPv4 networks
-- Disable automatic route summarization
+- Disable automatic summarization
 - Verify routing tables
 - Test end-to-end connectivity
 
 ---
 
-## Network Topology
+## Scenario
 
-![Network Topology](network-topology.png)
+The network consists of three office locations connected through two WAN point-to-point links.
 
----
-
-## Network Scenario
-
-The topology consists of three office networks connected through two WAN point-to-point links.
-
-- **Branch Office**
-  - LAN1: `192.168.1.0/24`
-
-- **Core Network**
-  - LAN2: `192.168.2.0/24`
-
-- **Remote Office**
-  - LAN3: `192.168.3.0/24`
-
-Routers exchange routing information automatically using **RIP Version 2**, eliminating the need for manually configured static routes.
+Instead of configuring static routes, Cisco RIPv2 is used to automatically exchange routing information between routers.
 
 ---
 
-## Technologies Used
+## Technologies
 
 - Cisco Packet Tracer
 - Cisco IOS
 - IPv4
 - Dynamic Routing
-- RIP Version 2 (RIPv2)
+- RIPv2
 - ICMP
 
 ---
 
-## IP Addressing Plan
+## IP Addressing
 
 | Network | Address |
 |---------|---------|
@@ -66,119 +51,131 @@ Routers exchange routing information automatically using **RIP Version 2**, elim
 
 ## Router Configuration
 
-### R1 (Branch)
-
-- Configure RIP Version 2
-- Advertise:
-  - LAN1
-  - LAN2
-  - WAN Link 1
-
-### R2 (Core)
-
-- Configure RIP Version 2
-- Advertise:
-  - WAN Link 1
-  - WAN Link 2
-
-### R3 (Remote)
-
-- Configure RIP Version 2
-- Advertise:
-  - LAN3
-  - WAN Link 2
-
----
-
-## RIP Configuration
-
 ### R1
 
-![R1 RIP Configuration](rip-configuration-r1.png)
+- Configure RIPv2
+- Advertise LAN 1
+- Advertise LAN 2
+- Advertise WAN network
 
 ### R2
 
-![R2 RIP Configuration](rip-configuration-r2.png)
+- Configure RIPv2
+- Advertise both WAN networks
 
 ### R3
 
-![R3 RIP Configuration](rip-configuration-r3.png)
+- Configure RIPv2
+- Advertise LAN 3
+- Advertise WAN network
 
 ---
 
-## Routing Tables
+## Verification
 
-### Routing Table (R1)
+The following commands were used:
 
-![Routing Table R1](routing-table-r1.png)
-
-### Routing Table (R2)
-
-![Routing Table R2](routing-table-r2.png)
-
-### Routing Table (R3)
-
-![Routing Table R3](routing-table-r3.png)
-
----
-
-## Connectivity Test
-
-### Branch to Remote
-
-![Branch to Remote](branch-to-remote-ping.png)
-
-### Remote to Branch
-
-![Remote to Branch](remote-to-branch-ping.png)
-
----
-
-## Verification Commands
-
-The following Cisco IOS commands were used during verification:
-
-```bash
-show ip interface brief
+```text
 show ip protocols
+
 show ip route
+
+show ip interface brief
+
 ping
 ```
 
 ---
 
-## Skills Demonstrated
+## Skills
 
 - Dynamic Routing
-- RIP Version 2 (RIPv2)
+- RIP Version 2
 - Cisco IOS CLI
-- IPv4 Addressing
 - Routing Tables
+- IPv4 Addressing
 - WAN Configuration
-- ICMP Connectivity Testing
+- ICMP Testing
 - Network Troubleshooting
 
 ---
 
-## Project Files
+## Files
 
-```
-rip-routing.pkt
-network-topology.png
-rip-configuration-r1.png
-rip-configuration-r2.png
-rip-configuration-r3.png
-routing-table-r1.png
-routing-table-r2.png
-routing-table-r3.png
-branch-to-remote-ping.png
-remote-to-branch-ping.png
-README.md
-LICENSE
-```
+- rip-routing.pkt
+- network-topology.png
+- rip-configuration-r1.png
+- rip-configuration-r2.png
+- rip-configuration-r3.png
+- show-ip-route-r1.png
+- show-ip-route-r2.png
+- show-ip-route-r3.png
+- branch-to-remote-ping.png
+- remote-to-branch-ping.png
 
 ---
 
-## Conclusion
+# Screenshots
 
-This project demonstrates how **RIP Version 2** enables routers to automatically exchange routing information, allowing seamless communication between multiple LANs without manually configuring static routes. The routing tables were successfully learned through RIP, and end-to-end connectivity was verified using ICMP ping tests.
+## Network Topology
+
+![Network Topology](network-topology.png)
+
+---
+
+## R1 RIP Configuration
+
+![R1 RIP](rip-configuration-r1.png)
+
+---
+
+## R2 RIP Configuration
+
+![R2 RIP](rip-configuration-r2.png)
+
+---
+
+## R3 RIP Configuration
+
+![R3 RIP](rip-configuration-r3.png)
+
+---
+
+## Routing Table (R1)
+
+![Routing Table R1](show-ip-route-r1.png)
+
+---
+
+## Routing Table (R2)
+
+![Routing Table R2](show-ip-route-r2.png)
+
+---
+
+## Routing Table (R3)
+
+![Routing Table R3](show-ip-route-r3.png)
+
+---
+
+## Branch to Remote Connectivity
+
+![Branch to Remote](branch-to-remote-ping.png)
+
+---
+
+## Remote to Branch Connectivity
+
+![Remote to Branch](remote-to-branch-ping.png)
+
+---
+
+## What I Learned
+
+- Configure dynamic routing using RIPv2.
+- Exchange routing information automatically.
+- Verify learned routes using Cisco IOS.
+- Understand the difference between static and dynamic routing.
+- Test end-to-end communication across multiple networks.
+- Troubleshoot routing using RIP verification commands.
