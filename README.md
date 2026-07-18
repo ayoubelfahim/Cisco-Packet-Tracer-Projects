@@ -25,6 +25,7 @@ This repository contains practical networking labs created using Cisco Packet Tr
 | 04 | VLAN & Inter-VLAN Routing | ✅ |
 | 05 | Static Routing (Multi-Site) | ✅ |
 | 06 | Dynamic Routing with RIPv2 | ✅ |
+| 07 | Access Control Lists (ACL) | ✅ |
 
 ## Tools
 
